@@ -21,6 +21,28 @@ be sure you have uninstalled Matplotlib and NumArray/Numpy before installing
 the new versions of these libraries.
 
 -------------------------------------------------------------------------------
+Specific to Windows 7 et 10 - added by Samia 16/07
+-------------------------------------------------------------------------------
+Prepare the environment
+	install python 2.7 and add it to your path OR install the Anaconda then activate python 2.7 environment
+		conda activate myenvpython27
+	Download and install Microsoft Visual C++ Compiler for Python 2.7 from the following link: Microsoft Visual C++ Compiler for Python 2.7
+
+	Copy the source of https://github.com/samia81/itrade_trunk   to your working repository named "itrade"
+		activate the environment via the command :
+			"env27/Scripts/activate"
+		Install wxPython2.8-win64-unicode-2.8.12.1-py27 from sourceforge
+		Install the library pyPdf : 
+			pip install pyPdf
+		Install library matplotlib  : 
+			pip install matplotlib
+	
+	To run the application : 
+		modify wx_compact.py from the code source : comment line 31 et 32			
+			
+		python itrade.py --lang=us
+
+-------------------------------------------------------------------------------
 Specific to Linux / Ubuntu Feisty
 -------------------------------------------------------------------------------
 
